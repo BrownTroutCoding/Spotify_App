@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jammers</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="/main.js" defer></script>
+</head>
+<body>
+    <div class="buttoncontain">
+        <button onclick="stopSnippet()" >Stop Song</button> <!--TODO Add onclick event listener-->
+    </div>
+    <header>
+        <img src="/static/spotify-icons-logos/icons/01_RGB/01_EPS/Spotify_Icon_RGB_Black.eps" alt="">
+    </header>
+    <!--Start of Container For Song Posters-->
+    <div class="container">
+        <div class="gallery"> <!--TODO Add onclick event listener for figures-->
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getSong(this.id, event)" >
+                <img class="logo" src="/static/spotify-icons-logos/icons/01_RGB/02_PNG/Spotify_Icon_RGB_Black.png" alt="">
+                <img class="gallery__img" src="static//images/PinkFloyd.JPG" alt="Pink Floyd Time">
+            </figure>
+
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="logo" src="/static/spotify-icons-logos/icons/01_RGB/02_PNG/Spotify_Icon_RGB_Black.png" alt="">
+                <img class="gallery__img" src="static//images/Yellow_Magic_Orch.JPG" alt="YELLOW MAGIC ORCHESTRA">
+            </figure>
+
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="logo" src="/static/spotify-icons-logos/icons/01_RGB/02_PNG/Spotify_Icon_RGB_Black.png" alt="">
+                <img class="gallery__img" src="static//images/AliceInChains.JPG" alt="the rooster">
+            </figure>
+
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="logo" src="/static/spotify-icons-logos/icons/01_RGB/02_PNG/Spotify_Icon_RGB_Black.png" alt="">
+                <img class="gallery__img" src="static//images/billyStrings.JPG" alt="dust in a baggie">
+            </figure>
+
+            <figure class="gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="logo" src="/static/spotify-icons-logos/icons/01_RGB/02_PNG/Spotify_Icon_RGB_Black.png" alt="">
+                <img class="gallery__img" src="static//images/BackYardTireFire.JPG" alt="brady">
+            </figure>
+
+            <figure class="gallery__item gallery__item--6" id="fig6" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="logo" src="/static/spotify-icons-logos/icons/01_RGB/02_PNG/Spotify_Icon_RGB_Black.png" alt="">
+                <img class="gallery__img" src="static//images/Schism.JPG" alt="schism">
+            </figure>
+        </div>
+    </div>
+    
+</body>
+</html>
